@@ -135,6 +135,7 @@ email: {\texttt{jsmith@affiliation.org}}) and Julius P.~Kumquat
 
 \maketitle
 \begin{abstract}
+This is the new sentence of this section.
 With the proliferation of mobile video cameras, it is becoming easier
 for users to capture videos of live performances and socially
 share them with friends and public. As an attendee of such live
@@ -166,6 +167,7 @@ Understanding]: Video Analysis\\\\
 \end{abstract}
 
 \section{Introduction}
+This is the new sentence of this section.
 Worldwide shipment of camera phones were estimated to reach
 1.14 billion in the year 2011 alone [1]. Furthermore, a survey of
 over 2,500 respondents by Photobucket reveals that 45  of the respondents
@@ -270,6 +272,8 @@ describe proposed mashup framework. We evaluate our system in
 Section 4. The conclusions are provided in Section 5.
 
 \section{PREVIOUS WORK}
+This is the new sentence of this section.
+This is the another new sentence of this section.
 There has been only few works on online camera selection. In
 most of these works, videos are mainly selected to show the speakers.
 In the work by Machnicki and Rowe [9], an online lecture
@@ -332,6 +336,7 @@ Ranjan et al. [12]& Yes& No & No & No & No & Meeting \\ \hline
 Shrestha et al. [15]& Yes& No & No & No & No & Live Performances\\ \hline
 \end{tabular}
 \end{table*}
+This is the new sentence of this section.
 propose a method to automatically select shots from multiple cameras
 for storytelling, according to the rules provided by the director.
 These methods are not useful for us as live performances generally
@@ -361,12 +366,14 @@ method is the first attempt to consider history based diversity
 through learning for online video selection for live performances. 
 
 \section{MOVIMASH FRAMEWORK}
+This is the new sentence of this section.
 In this section, we first enumerate the design principles that we
 have followed in the development of MoViMash and then describe
 the framework. After an overview of MoViMash, we focus on individual
 components.
 
 \subsubsection{Design Principles}
+This is the new sentence of this section.
 The end goal of the MoViMash is to produce a mashup that users
 like. To achieve this goal, we have followed a set of design principles
 as follows:
@@ -402,6 +409,7 @@ through various quality metrics and video selection/filtering phases,
 as described in the following section.
 
 \subsubsection{Framework}
+This is the new sentence of this section.
 At every time instant, we have a number of videos to choose
 from. Once we have chosen the video, we also need to decide when
 to switch to another video. Hence, there are two main questions
@@ -443,10 +451,12 @@ complete and interesting coverage of the performance. We now
 describe each component of the framework in detail.
 
 \subsection{View Quality}
+This is the new sentence of this section.
 The view quality is measured in terms of three characteristics:
 occlusion, shakiness, and camera tilt. The details of measurement
 of each of these quantities is given below.
 \subsubsection{Occlusion}
+This is the new sentence of this section.
 For both a stand mounted camera and a mobile camera, there
 is always a chance of view occlusion. At crowded places, people
 sometime do not notice the cameras recording the video and occlude
@@ -537,6 +547,7 @@ than 0.2 are very bad, so these are filtered in the framework.
 \end{itemize}
 
 \subsubsection{Tilt}
+This is the new sentence of this section.
 In this work, we define tilt as the rotation of the camera around
 horizontal axis. User’s generally do not like the videos recorded
 by tilted cameras. Therefore, we detect the tilted camera views
@@ -570,6 +581,7 @@ $$
 $$
 where Nl is the total number of lines in the image.
 \end{itemize}
+This is the new sentence of this section.
 An example of tilt calculation is shown in Figure 4; the upper
 row shows frames from the video and the figure in lower row shows
 occlusion scores. The video clip is recorded by a mobile phone
@@ -582,6 +594,7 @@ with a tilt score of 0.4 are found unusable and they are filtered.
 
 
 \subsubsection{Shakiness}
+This is the new sentence of this section.
 Shakiness is calculated based on the method described in [4].
 In this method, the pixel values are projected on horizontal and
 vertical axes. The horizontal and vertical projections are matched
@@ -604,6 +617,7 @@ corresponding tilt score}
 
 
 \subsection{Learning}
+This is the new sentence of this section.
 As mentioned earlier in Section 1, it is difficult to precisely enumerate
 all the rules which professional editors follow in selecting
 a video and its corresponding shot length. In MoViMash, we propose
@@ -651,6 +665,7 @@ $$
   \mathcal{LF} &1/31 & 2/3& 3/31 &7/311/31&1/31&1/31 \cr
   }
 $$
+This is the new sentence of this section.
 We use affine transformation to classify the video, giving an accuracy
 of approx 77\% on our dataset. However, since learning is one
 time job, we performed manual classification of shots during the
@@ -673,6 +688,7 @@ pattern of transitions and shot lengths which can be learned and
 applied to create online mashup.\\
 
 \subsection{Video Quality}
+This is the new sentence of this section.
 We can have different quality videos because of the limitation of
 recording devices, varied camera positioning, lighting conditions,
 camera angle, and video recording skills of the person. To produce
@@ -739,6 +755,7 @@ want to give priority to the videos that are good in all aspects.
 
 
 \subsection{Diversity}
+This is the new sentence of this section.
 The aspect of diversity is included in the framework by calculat-
 ing the similarity of the views of the videos selected in the recent
 past. Let $\mathcal{H}$ be the history of the cameras that have been selected
@@ -787,7 +804,7 @@ frame of the selected video in H. If we choose a scheme
 where each camera is selected only for fixed amount of time,
 we may just store the current frame of the selected video.
 \end{enumerate}
-
+This is the new sentence of this section.
 The diversity scores for two candidate videos (Cam 1, Cam 2)
 and final mashup created using MoViMash for a performance (P3
 in Table 2) are shown in the Figure 5. Although we are showing
@@ -808,6 +825,7 @@ that it gets selected again. In summary, the metric $S^d$ is able to
 capture and spatial and temporal diversity of videos.
 
 \subsection{Final Ranking}
+This is the new sentence of this section.
 For all the videos of the selected class, we have three metrics:
 video quality score, diversity score, and shakiness score. We cal-
 culated weighted sum of these values to calculate final score $S_f$ :
@@ -837,6 +855,7 @@ P2&Group Dance&12&3 &30 &720*480 \hline
 
 
 \subsection{Length Selection}
+This is the new sentence of this section.
 To determine the switching instant, we are using a method which
 combines the learning based prediction to obey the editing rules and
 the superiority (in terms of overall quality) of the currently selected
@@ -876,6 +895,7 @@ selection. While a lower video quality can still be acceptable, an
 occluded or shaky video annoys the viewers.
 
 \section{EVALUATION}
+This is the new sentence of this section.
 The main goal of the experiments is to show that the proposed
 framework produces a mashup with better view quality and diversity
 than earlier works. In addition, we also compare our result with
@@ -887,6 +907,7 @@ only (VQ-Only) (3) by human editor with editing experience (HEdited).
 Users are asked to rate the quality of all three versions of
 mashup.
 \subsection{Dataset}
+This is the new sentence of this section.
 The main application of the proposed framework is to combine
 the videos recorded by mobile phone users. Therefore, we went to
 three public performances and handed over smart phones to the audiences
@@ -901,6 +922,7 @@ being researched separately [14]. The details of the performances
 and video recordings are given in the Table 2. Figure 6 shows selected
 frames for each performance.
 \subsection{User Study}
+This is the new sentence of this section.
 In the user study, we ask the users to watch the mashups created
 by the three methods and rate them accordingly. A total of seventeen
 users participated in the study, with age range from 20 to 30.
@@ -939,11 +961,13 @@ The users rate the videos with a rating ranged between 1 to 5, where
 are given in Table 3.
 
 \subsection{Result Analysis}
+This is the new sentence of this section.
 The average responses of the users, along with their standard
 deviations, are plotted in Figure 7 and Figure 8. We observed responses
 of the users for Questions A,B,C,D to be similar and with
 slight variation for Question E.
 \subsubsection{\textit{Analysis of Questions A, B, C, and D}}
+This is the new sentence of this section.
 We observed that majority of users responded homogeneously
 for all four of them. The responses indicated that the ratings were
 based on some distinct characteristics of the video. Based on additional
@@ -992,6 +1016,7 @@ have to make video selection in real-time. This finding makes a
 strong case for automated mashup creation for live applications of
 video sharing and broadcasting.
 \subsubsection{Overall Video Quality}
+This is the new sentence of this section.
 User ratings for overall video quality are shown in the Figure 8.
 We can see that on average, MoViMash outperforms other methods
 in overall video quality. Users generally liked the quality of
@@ -1018,6 +1043,7 @@ it will fail in many real scenarios as it does not have any provision
 for view quality and smooth shot transitions.
 
 \subsection{Discusstion}
+This is the new sentence of this section.
 The MoViMash framework takes automatic mashup creation methods
 closer to the human editors. It, however, adds to the processing
 cost. The enhanced diversity model requires more memory for storing
@@ -1032,6 +1058,7 @@ system scalable, we can process downscaled images as the video
 resolution is not critical for the current system components.
 
 \section{CONCLUSIONS & FUTUREWORK}
+This is the new sentence of this section.
 In this paper, we have proposed and validated an online video
 mashup creation framework, MoViMash, for videos recorded by
 mobile devices. Based on the experiments and user study, we make
@@ -1065,6 +1092,7 @@ to study the impact of the number of videos on the quality of the
 final mashup.
 
 \section*{Acknowledgment}
+This is the new sentence of this section.
 This research is conducted under the NExT Search Center, supported
 by the Singapore National Research Foundation and the Interactive
 Digital Media R&D Program Office of Media Development
